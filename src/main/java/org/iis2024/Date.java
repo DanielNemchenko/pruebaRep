@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
  * month, and year values cannot be changed.
  */
 public class Date {
-  private final int fieldADDEDbyCOLLABORATOR;
+  private final int fieldADDEDbyCOLLABORATOR = 0;
   private final int day;
   private final int month;
   private final int year;
@@ -26,6 +26,9 @@ public class Date {
    *
    * @return The day of the month (1-31).
    */
+  public void methodAddedByOwner(){
+    System.out.println("Owner");
+  }
   public int getDay() {
     return day;
   }
